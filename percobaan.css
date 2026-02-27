@@ -1,0 +1,220 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+        body{
+            height:100vh;
+            background:url('background.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .overlay{
+            position:fixed;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.6);
+        }
+        /* LOGIN STYLE BARU */
+.login-box{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    padding:40px 30px;
+    width:350px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+.login-box .avatar{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#5a67d8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:-70px auto 20px;
+    font-size:40px;
+    color:white;
+}
+
+.login-box h2{
+    margin-bottom:25px;
+    color:white;
+}
+
+.input-field{
+    display:flex;
+    align-items:center;
+    background:white;
+    border-radius:8px;
+    margin-bottom:15px;
+    padding:8px 12px;
+}
+
+.input-field i{
+    margin-right:10px;
+    color:#888;
+}
+
+.input-field input{
+    border:none;
+    outline:none;
+    width:100%;
+    padding:8px;
+}
+
+.btn-login{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2b6cb0;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.btn-login:hover{
+    background:#1e4e8c;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    margin-top:10px;
+    color:white;
+}
+
+.options a{
+    color:white;
+    text-decoration:none;
+}
+
+        .btn:hover{opacity:0.9}
+        .error{color:red;font-size:13px;margin-top:10px}
+
+        /* HOME STYLE */
+        .home{
+            display:none;
+            position:relative;
+            width:90%;
+            height:90vh;
+            z-index:2;
+            color:#fff;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:2fr 1fr;
+            gap:30px;
+            height:100%;
+        }
+        .menu-section{
+            display:grid;
+            grid-template-columns:repeat(2, 280px);
+            gap:40px;
+            justify-content: center;
+            align-content:center;
+        }
+        .card{
+            width: 280px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(20px);
+            border-radius:30px;
+            transition:all 0.3s ease;
+            cursor:pointer;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+        }
+        .card:hover{
+            transform:scale(1.07px);
+            border:1px solid #4e73df;
+            box-shadow:0 15px 40px rgba(78,115,223,0.5);
+        }
+         .icon{
+            font-size:45px;
+            background:rgba(78,115,223,0.15);
+            padding:20px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+        .card:hover{
+            transform:translateY(-8px);
+            background:rgba(255,255,255,0.15);
+        }
+        .profile{
+            position: fixed;
+            top: 50px;
+            right: 100px;
+            width: 320px;
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(15px);
+            padding:60px;
+            border-radius:25px;
+            text-align:center;
+        }
+        .profile img{
+            width:120px;
+            height:120px;
+            border-radius:20px;
+            object-fit:cover;
+            margin-bottom:15px;
+            border:3px solid #fff;
+        }
+        .logout{
+            margin-top:20px;
+            padding:10px 20px;
+            border:none;
+            border-radius:10px;
+            background:#e74a3b;
+            color:#fff;
+            cursor:pointer;
+        }
+        .logout:hover{opacity:0.9}
+
+        /* ANIMASI HALUS */
+.fade-out{
+    opacity:0;
+    transform:translateY(20px);
+    transition:all 0.4s ease;
+    pointer-events:none;
+}
+
+.fade-in{
+    opacity:1;
+    transform:translateY(0);
+    transition:all 0.4s ease;
+}
+
+#contentArea{
+    opacity:0;
+    transform:translateY(30px);
+    transition:all 0.4s ease;
+}
+
+/* tombol modern */
+.btn-modern{
+    padding:10px 18px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#4e73df,#224abe);
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+
+.btn-modern:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(78,115,223,0.4);
+}

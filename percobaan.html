@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pembelajaran</title>
+    <link rel="stylesheet" href="percobaan.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<!-- LOGIN PAGE -->
+<div class="login-box" id="loginPage">
+    <div class="avatar">👤</div>
+    <h2>Sign In</h2>
+
+    <div class="input-field">
+        <i>👤</i>
+        <input type="text" id="username" placeholder="Username">
+    </div>
+
+    <div class="input-field">
+        <i>🔒</i>
+        <input type="password" id="password" placeholder="Password">
+    </div>
+
+    <button class="btn-login" onclick="login()">LOGIN</button>
+
+    <div class="options">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <div class="error" id="errorMsg"></div>
+</div>
+
+
+
+<!-- HOME PAGE -->
+<div class="home" id="homePage">
+    <div class="container">
+        <div class="menu-section">
+            <div class="card" onclick="showDashboard()">
+                <div class="icon">📊</div>
+                <div>Dashboard Pembelajaran</div>
+            </div>
+            <div class="card">
+                <div class="icon">📚</div>
+                <div>Menu Materi</div>
+            </div>
+            <div class="card" onclick="showTugas()">
+                <div class="icon">📝</div>
+                <div>Menu Tugas</div>
+            </div>
+            <div class="card" onclick="logout()">
+                <div class="icon">🚪</div>
+                <div>Logout</div>
+            </div>
+        </div>
+
+        <div id="contentArea" style="grid-column:1/2; margin-top:20px; color:white;"></div>
+
+        <div class="profile">
+            <img src="fotoprofile.jpg" alt="Profile" id="profileImage">
+            <h2>Muhammad Iput Hermansyah</h2>
+            <p>Pengguna Aktif</p>
+            <p style="margin-top:10px;font-size:14px;opacity:0.8">Username : @hermansyah <span id="showUser"></span></p>
+            <button class="logout" onclick="logout()">Keluar</button>
+        </div>
+    </div>
+</div>
+<script src="percobaan.js"></script>
+</body>
+</html>
